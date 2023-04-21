@@ -1,0 +1,22 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    {% if form_errors %}
+        <h4>Form field got some errors:</h4>
+        {% for key,value in form_errors.items %}
+            {{ key }}: {{ value }}
+        {% endfor %}
+    {% endif %}
+    {% if request.user.is_authenticated %}
+        <h5>
+            You are already logged in.
+            Check out our <a href="{% url 'books' %}">books</a>!
+        </h5>
+    {% else %}
+        <form action="{% url 'register' %}" method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Register">
+        </form>
+    {% endif %}
+{% endblock %}

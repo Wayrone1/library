@@ -1,0 +1,16 @@
+docker run -d --name library_project -p 5434:5432 -v $HOME/postreqsql/library_project:/var/lib/postgresql/library_project -e POSTGRES_PASSWORD=68993 -e POSTGRES_USER=app -e POSTGRES_DB=library_db postgres
+
+psql -h 127.0.0.1 -p 5434 -U app -d library_db
+
+psql -h 127.0.0.1 -p 5434 -U app -d library_db -f init_db.ddl
+
+
+
+# resetting db
+
+pip3 install django_extensions
+# add django_extensions to your settings -> installed apps
+python3 manage.py reset_db
+# create schema in DB
+python3 manage.py migrate
+python3 manage.py createsuperuser

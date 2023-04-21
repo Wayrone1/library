@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    {% if book %}
+        <h1>{{ book.title }}</h1>
+        {% if user_access %}
+            <h2>Description: {{ book.description }}</h2>
+        {% else %}
+            <h2>
+                You do not have access to this book yet. 
+                You can <a href="{% url 'purchase' %}?id={{book.id}}">buy it.</a>
+            </h2>
+        {% endif %}
+    {% else %}
+      <p>Book not found..</p>
+    {% endif %}
+{% endblock %}

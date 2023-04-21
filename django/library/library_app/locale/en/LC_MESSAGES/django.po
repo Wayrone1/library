@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-28 00:40+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: library_app/models.py:15
+msgid "created"
+msgstr ""
+
+#: library_app/models.py:21
+msgid "modified"
+msgstr ""
+
+#: library_app/models.py:27
+msgid "full name"
+msgstr ""
+
+#: library_app/models.py:28 library_app/models.py:74
+msgid "books"
+msgstr ""
+
+#: library_app/models.py:35
+msgid "author"
+msgstr ""
+
+#: library_app/models.py:36 library_app/models.py:65
+msgid "authors"
+msgstr ""
+
+#: library_app/models.py:54 library_app/models.py:73
+msgid "book"
+msgstr ""
+
+#: library_app/models.py:55
+msgid "journal"
+msgstr ""
+
+#: library_app/models.py:59
+msgid "title"
+msgstr ""
+
+#: library_app/models.py:60 library_app/models.py:88
+msgid "description"
+msgstr ""
+
+#: library_app/models.py:61
+msgid "volume"
+msgstr ""
+
+#: library_app/models.py:62
+msgid "age limit"
+msgstr ""
+
+#: library_app/models.py:63
+msgid "year"
+msgstr ""
+
+#: library_app/models.py:64
+msgid "type"
+msgstr ""
+
+#: library_app/models.py:66 library_app/models.py:96
+msgid "genres"
+msgstr ""
+
+#: library_app/models.py:87
+msgid "name"
+msgstr ""
+
+#: library_app/models.py:95
+msgid "genre"
+msgstr ""
